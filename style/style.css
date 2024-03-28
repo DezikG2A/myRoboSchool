@@ -265,7 +265,7 @@ a{
 .modal-box{
     position: relative;
     width: 940px;
-    max-height: 760px;
+    max-height: 700px;
     padding: 40px;
     z-index: 555;
     background-color: white;
