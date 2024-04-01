@@ -93,6 +93,14 @@ a{
     display: inline-block;
 }
 
+.button-kurs:hover{
+    background-color: rgb(255, 0, 0);
+    color: black;
+    transition: .3s;
+    padding: 28px 56px;
+    margin-left: 5px
+}
+
 .header-img{
     width: 50%;
     height: 100%;
@@ -172,6 +180,37 @@ a{
 .kurs-img{  
     cursor: pointer;
     margin-left: 5px;
+}
+
+.kurs-name .kurs-img-title{
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: -60px;
+    transition: 3s;
+    right: 140px;
+}
+
+.kurs-img.kurs-img-title::after{
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: 34px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent;
+}
+
+.kurs-name:hover .kurs-img-title{
+    visibility: visible;
+    opacity: 1;
+    
 }
 
 .treners{
@@ -569,4 +608,14 @@ body.modal-box{
     color: white;
     font-size: 16px;
     font-weight: 200;
+}
+
+
+@media (max-width:1100px){
+    .pack-card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
 }
